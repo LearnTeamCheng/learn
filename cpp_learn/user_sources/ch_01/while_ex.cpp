@@ -5,6 +5,6 @@ int main() {
         sum += value;
         i++;
     }
-    std::cout << "Sum of " << i0 << " numbers is " << sum << std ::endl;
+    std::cout << "Sum of " << i << " numbers is " << sum << std ::endl;
     return 0;
 }
