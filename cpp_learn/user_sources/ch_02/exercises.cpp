@@ -1,5 +1,8 @@
+#include <cstdio>
 #include <iostream>
 #include <string>
+
+void printf(int x) { std::cout << x << std::endl; }
 
 /*
 std::string global_str;
@@ -32,5 +35,17 @@ int main(int argc, char *argv[]) {
   a1 = &a3;
   a2 = a1;
   std::cout << *a2 << std::endl;
+
+  int i2 = 42;
+  int &r1 = i2;
+  const int &r2 = i2;
+  printf(i2);
+  printf(r1);
+  printf(r2);
+  r1 = 0;
+
+  printf(i2);
+  printf(r1);
+  printf(r2);
   return 0;
 }
