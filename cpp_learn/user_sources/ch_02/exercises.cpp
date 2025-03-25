@@ -4,20 +4,7 @@
 
 void printf(int x) { std::cout << x << std::endl; }
 
-/*
-std::string global_str;
-int global_int;
-
-int main(int argc, char *argv[]) {
-  int local_int;
-  std::string local_str;
-  std::cout << global_int << std::endl;
-  std::cout << global_str << std::endl;
-  std::cout << local_int << std::endl;
-  std::cout << local_str << std::endl;
-  return 0;
-}
-*/
+struct Foo {};
 
 int main(int argc, char *argv[]) {
   int ival = 42;
@@ -47,5 +34,9 @@ int main(int argc, char *argv[]) {
   printf(i2);
   printf(r1);
   printf(r2);
+
+  typedef char *pstring;
+  const pstring cstr = 0;
+
   return 0;
 }
